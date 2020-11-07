@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
 import java.util.UUID;
 
 @Repository
-public interface ConnectionRepository extends JpaRepository<Connection, UUID> {
+public interface ConnectionRepository extends JpaRepository<Connection, Integer> {
 }

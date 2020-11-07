@@ -7,16 +7,15 @@ public class ConnectionRequest {
     private String firstName;
     private String lastName;
     private String email;
-    private String mobileNumber;
+    private long mobileNumber;
     private String plan;
     private String supportingDocType;
     private String supportingDocNumber;
-    private String status;
 
     public ConnectionRequest() {
     }
 
-    public ConnectionRequest(String firstName, String lastName, String email, String mobileNumber, String plan, String supportingDocType, String supportingDocNumber, String status) {
+    public ConnectionRequest(String firstName, String lastName, String email, long mobileNumber, String plan, String supportingDocType, String supportingDocNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -24,7 +23,6 @@ public class ConnectionRequest {
         this.plan = plan;
         this.supportingDocType = supportingDocType;
         this.supportingDocNumber = supportingDocNumber;
-        this.status = status;
     }
 
     public String getFirstName() {
@@ -51,11 +49,11 @@ public class ConnectionRequest {
         this.email = email;
     }
 
-    public String getMobileNumber() {
+    public long getMobileNumber() {
         return mobileNumber;
     }
 
-    public void setMobileNumber(String mobileNumber) {
+    public void setMobileNumber(long mobileNumber) {
         this.mobileNumber = mobileNumber;
     }
 
@@ -81,13 +79,5 @@ public class ConnectionRequest {
 
     public void setSupportingDocNumber(String supportingDocNumber) {
         this.supportingDocNumber = supportingDocNumber;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
     }
 }

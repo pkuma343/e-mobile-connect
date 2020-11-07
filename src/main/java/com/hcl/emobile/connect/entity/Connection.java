@@ -9,7 +9,7 @@ import java.util.UUID;
 public class Connection {
     @Id
     @GeneratedValue
-    private String requestId;
+    private int requestId;
     private String firstName;
     private String lastName;
     private String email;
@@ -22,7 +22,7 @@ public class Connection {
     public Connection() {
     }
 
-    public Connection(String requestId, String firstName, String lastName, String email, long mobileNumber, String plan, String supportingDocType, String supportingDocNumber, String status) {
+    public Connection(int requestId, String firstName, String lastName, String email, long mobileNumber, String plan, String supportingDocType, String supportingDocNumber, String status) {
         this.requestId = requestId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -34,11 +34,11 @@ public class Connection {
         this.status = status;
     }
 
-    public UUID getRequestId() {
+    public int getRequestId() {
         return requestId;
     }
 
-    public void setRequestId(UUID requestId) {
+    public void setRequestId(int requestId) {
         this.requestId = requestId;
     }
 
